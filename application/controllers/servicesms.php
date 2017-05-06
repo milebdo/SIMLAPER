@@ -170,6 +170,7 @@ class Servicesms extends CI_Controller {
         ));
         
         $arrayContent = explode("#", $content);
+
         if (count($arrayContent) < 2 || count($arrayContent) > 2) {
             $repliedText = "Maaf FORMAT Broadcast SALAH, mohon periksa dan ulangi kembali";
             return $this->sendResponse($sender, $repliedText);
